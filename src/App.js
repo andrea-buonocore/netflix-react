@@ -1,6 +1,6 @@
 
 import MyNavbar from './components/MyNavbar';
-import Footer from './components/Footer';
+import MyFooter from './components/MyFooter';
 import Gallery from './components/Gallery';
 import './App.css';
 
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <MyNavbar/>
       <Gallery/>
-      <Footer/>
+      <MyFooter/>
     </div>
   );
 }

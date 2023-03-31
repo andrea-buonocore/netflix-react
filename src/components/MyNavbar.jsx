@@ -2,45 +2,44 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import Logo from '../img/netflix_logo.png'
+import Avatar from '../img/avatar.png'
 const MyNavbar = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Container>
+        <Navbar className="py-0 navbar" collapseOnSelect expand="lg" bg="dark" variant="dark" >
+            <Container fluid>
                 <Navbar.Brand href="#">
                     <img
-                        src="../img/netflix_logo.png"
-                        width="30"
-                        height="30"
+                        src={Logo}       
+                        width="120"
                         className="d-inline-block align-top"
-                        alt="Netflix React logo"
+                        alt="Netflix"
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="#">Home</Nav.Link>
-                        <Nav.Link href="#">TV Shows</Nav.Link>
+                        <Nav.Link active href="#">TV Shows</Nav.Link>
                         <Nav.Link href="#">Movies</Nav.Link>
                         <Nav.Link href="#">Recently Added</Nav.Link>
                         <Nav.Link href="#">My List</Nav.Link>
-                        <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
-                                Separated link
-                            </NavDropdown.Item>
-                        </NavDropdown>
                     </Nav>
                     <Nav>
-                        <Nav.Link>More deets</Nav.Link>
-                        <Nav.Link>More deets</Nav.Link>
-                        <Nav.Link>More deets</Nav.Link>
-                        <Nav.Link>More deets</Nav.Link>
+                        <Nav.Link><i class="bi bi-search text-light"></i></Nav.Link>
+                        <Nav.Link className='text-light'>KIDS</Nav.Link>
+                        <Nav.Link><i class="bi bi-bell text-light"></i></Nav.Link>
+                        <NavDropdown title="Account" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="#" id="switchUser">
+                                <img
+                                    src={Avatar}
+                                    width="30"
+                                    height="30"
+                                    className="d-inline align-top"
+                                    alt="avatar"
+                                />
+                            </NavDropdown.Item>
+                        </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
