@@ -15,7 +15,7 @@ class SingleMovie extends Component {
 
         return (
             <Col className="my-2">
-                <Card className="border border-1 border-dark movieCard" >
+                <Card className="border border-1 border-dark movieCard">
                     <Card.Img
                         variant="top"
                         className="cardImg"
@@ -40,11 +40,15 @@ class SingleMovie extends Component {
                     />
 
                     {this.state.isShown && (
-                        <>
-                            <Card.Body 
-                                className="py-0 px-2"
-                                
-                            >
+                        <div>
+                            <Card.Body className="py-0 px-2"  onMouseEnter={
+                            () => {
+        
+                                this.setState({
+                                    isShown: true
+                                })
+                            }
+                        }>
                                 <Card.Text className="text-dark fw-bold text-truncate">
                                     <small>{this.props.movie.Title}</small>
                                     <br />
@@ -53,12 +57,13 @@ class SingleMovie extends Component {
                             </Card.Body>
                             <Card.Footer 
                                 className="d-flex align-items-center m-0"
+                                
                             >
                                 <i className="bi bi-play-circle-fill"></i>
                                 <small className="text-dark mx-2">Watch Now</small>
                             </Card.Footer>
 
-                        </>
+                        </div>
                     )}
 
 
