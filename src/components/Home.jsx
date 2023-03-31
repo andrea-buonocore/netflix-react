@@ -6,9 +6,9 @@ const Home = () => {
     return (
         <Container className="px-0">
             <HomeMenu />
-            <Gallery movie="harry" />
+            <Gallery movie="star wars" />
             <Gallery movie="lord of the rings" />
-            <Gallery movie="toy" />
+            <Gallery movie="matrix" />
         </Container>
     )
 }
