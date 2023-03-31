@@ -7,7 +7,7 @@ const Home = () => {
         <Container className="px-0">
             <HomeMenu />
             <Gallery movie="star wars" />
-            <Gallery movie="lord of the rings" />
+            <Gallery movie="attack on titan" />
             <Gallery movie="matrix" />
         </Container>
     )

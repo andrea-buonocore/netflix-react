@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 const MyFooter = () => {
     return (
         <Container fluid>
-            <footer className="p-0 container footerContainer mt-5">
+            <footer className="py-3 container footerContainer mt-5">
                 <div>
                     <a href="#"><i className="bi bi-facebook"></i></a>
                     <a href="#"><i className="bi bi-twitter"></i></a>
@@ -44,7 +44,7 @@ const MyFooter = () => {
                 <button type="button" className="btn btn-outline-secondary rounded-0 my-3 button">Service
                     Code</button>
 
-                <p className="grigio">&copy; 1997-2019 Netflix, Inc.</p>
+                <p className="grigio text-center">&copy; 1997-2019 Netflix, Inc.</p>
             </footer>
         </Container>
     )

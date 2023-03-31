@@ -1,15 +1,19 @@
 .App {
-  margin-bottom: 5rem;
-  background-color: #141414;
+    margin-bottom: 5rem;
+    background-color: #141414;
 }
 
 
 /* IMPORTED CSS */
-.container-fluid, .container, header,body {
+.container-fluid,
+.container,
+header,
+body {
     background-color: #141414;
 }
 
-.container, header {
+.container,
+header {
     color: white;
 }
 
@@ -17,7 +21,8 @@ hr {
     color: gray;
 }
 
-ul,li {
+ul,
+li {
     background-color: #141414;
     padding: 0 !important;
 
@@ -53,7 +58,7 @@ ul,li {
 }
 
 .littleIcons:hover {
-    color:gray;
+    color: gray;
     border-color: gray;
     background-color: white;
 
@@ -70,13 +75,13 @@ ul,li {
 .video {
     transition: 0.2s;
     cursor: pointer;
-    
+
 }
 
 .video:hover {
     transform: scale(1.2);
     z-index: 1;
-    
+
 }
 
 
@@ -126,85 +131,85 @@ footer p:last-child {
 /* CUSTOM CHECKBOX */
 /* The container */
 .checkContainer {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 15px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* Hide the browser's default checkbox */
 .checkContainer input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
 
 /* Create a custom checkbox */
 .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eeeeee00;
-  border: 1px solid gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eeeeee00;
+    border: 1px solid gray;
 }
 
 /* On mouse-over, add a grey background color */
-.checkContainer:hover input ~ .checkmark {
-  background-color: #ccc;
+.checkContainer:hover input~.checkmark {
+    background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.checkContainer input:checked ~ .checkmark {
-  background-color: #2195f300;
+.checkContainer input:checked~.checkmark {
+    background-color: #2195f300;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
+    content: "";
+    position: absolute;
+    display: none;
 }
 
 /* Show the checkmark when checked */
-.checkContainer input:checked ~ .checkmark:after {
-  display: block;
+.checkContainer input:checked~.checkmark:after {
+    display: block;
 }
 
 /* Style the checkmark/indicator */
 .checkContainer .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid gray;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid gray;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 
-@media screen and (min-width:576px){
-    
+@media screen and (min-width:576px) {
+
     .profileContainer {
         width: 50%;
     }
 
 }
 
-@media screen and (min-width:768px){
-    
-  
+@media screen and (min-width:768px) {
+
+
     .footerContainer {
         width: 50%;
     }
@@ -213,18 +218,29 @@ footer p:last-child {
 /* CUSTOM CSS */
 
 .navbar {
-  z-index: 5;
+    z-index: 5;
 }
 
 .footerContainer {
-  z-index: 1;
+    z-index: 1;
 }
 
-.movieImg {
+.movieCard {
     cursor: pointer;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
-.movieImg:hover {
-    transform: scale(1.2)
+.movieCard:hover {
+    transform: scale(1.2);
+    z-index: 4;
 }
+
+.cardImg {
+    cursor: pointer;
+    height: 300px;
+}
+
+.bi-play-circle-fill {
+    color: rgb(23, 148, 23);
+}
+

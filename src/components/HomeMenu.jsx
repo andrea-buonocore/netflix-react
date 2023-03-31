@@ -1,8 +1,9 @@
 import Container from "react-bootstrap/Container"
 import Dropdown from "react-bootstrap/Dropdown"
+
 const HomeMenu = () => {
     return (
-        <Container className="px-0">
+        <Container className="py-0">
             <div className="d-flex align-items-center justify-content-between pt-5 mb-5">
                 <div className="d-flex align-items-center">
                     <span className="fs-2 text-light" id="tvShows">Tv Shows</span>
