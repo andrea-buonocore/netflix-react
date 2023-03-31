@@ -20,7 +20,7 @@ const MyNavbar = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="#">Home</Nav.Link>
-                        <Nav.Link active href="#">TV Shows</Nav.Link>
+                        <Nav.Link href="#">TV Shows</Nav.Link>
                         <Nav.Link href="#">Movies</Nav.Link>
                         <Nav.Link href="#">Recently Added</Nav.Link>
                         <Nav.Link href="#">My List</Nav.Link>
