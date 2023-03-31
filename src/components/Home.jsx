@@ -9,6 +9,8 @@ const Home = () => {
             <Gallery movie="star wars" />
             <Gallery movie="attack on titan" />
             <Gallery movie="matrix" />
+            <Gallery movie="lord of" />
+            <Gallery movie="batman" />
         </Container>
     )
 }
