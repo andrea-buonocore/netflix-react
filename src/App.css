@@ -230,7 +230,7 @@ footer p:last-child {
 }
 
 .movieCard {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s linear;
 }
 
 .movieCard:hover {

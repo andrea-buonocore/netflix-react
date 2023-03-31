@@ -15,7 +15,7 @@ class SingleMovie extends Component {
 
         return (
             <Col className="my-2">
-                <Card className="border border-0 h-100 movieCard" >
+                <Card className="border border-1 border-dark h-100 movieCard" >
                     <Card.Img
                         variant="top"
                         className="cardImg"
