@@ -40,7 +40,17 @@ class SingleMovie extends Component {
 
                     {this.state.isShown && (
                         <>
-                            <Card.Body className="py-0 px-2">
+                            <Card.Body 
+                                className="py-0 px-2"
+                                onMouseEnter={
+                                    () => {
+                
+                                        this.setState({
+                                            isShown: true
+                                        })
+                                    }
+                                }
+                            >
                                 <Card.Text className="text-dark fw-bold text-truncate">
                                     <small>{this.props.movie.Title}</small>
                                     <br />

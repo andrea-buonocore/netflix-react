@@ -230,7 +230,6 @@ footer p:last-child {
 }
 
 .movieCard {
-    cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -245,5 +244,6 @@ footer p:last-child {
 
 .bi-play-circle-fill {
     color: rgb(23, 148, 23);
+    cursor: pointer;
 }
 
