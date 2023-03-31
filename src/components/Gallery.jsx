@@ -46,7 +46,7 @@ class Gallery extends Component {
                 isLoading: false,
                 isError: true,
             })
-            console.log('Errore nella richiesta', err);
+            console.log('Errore nella richiesta:', err);
         }
     }
 
