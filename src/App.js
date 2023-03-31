@@ -1,15 +1,15 @@
 
 import MyNavbar from './components/MyNavbar';
 import MyFooter from './components/MyFooter';
-import Gallery from './components/Gallery';
 import './App.css';
+import Home from './components/Home';
 
 function App() {
   return (
     <div className="App">
-      <MyNavbar/>
-      <Gallery/>
-      <MyFooter/>
+      <MyNavbar />
+      <Home/>
+      <MyFooter />
     </div>
   );
 }
